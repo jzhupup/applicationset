@@ -20,4 +20,4 @@ spec:
       destination:
         server: https://172.30.40.68:6443
         #server: '{{cluster.address}}'
-        namespace: jzh-demo
+        namespace: default
