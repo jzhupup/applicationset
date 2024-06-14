@@ -6,11 +6,13 @@ spec:
   generators:
   - list:
       elements:
-      - cluster: engineering-dev
-        url: https://172.30.40.68:6443
+      - cluster: zcl-97
+        url: https://172.16.222.97:6443
+      - cluster: zcl-98
+        url: https://172.16.222.98:6443
   template:
     metadata:
-      name: application-guestbook
+      name: '{{.cluster}}-guestbook'
     spec:
       project: b364f698
       source:
@@ -18,6 +20,5 @@ spec:
         targetRevision: HEAD
         path: examples/git-generator-files-discovery/apps/guestbook
       destination:
-        server: https://172.30.40.68:6443
-        #server: '{{cluster.address}}'
+        server: '{{.url}}'
         namespace: default
