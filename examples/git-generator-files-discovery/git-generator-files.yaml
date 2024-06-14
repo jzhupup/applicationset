@@ -16,7 +16,7 @@ spec:
       source:
         repoURL: https://github.com/jzhupup/applicationset.git
         targetRevision: HEAD
-        path: "examples/git-generator-files-discovery/apps/guestbook"
+        path: examples/git-generator-files-discovery/apps/guestbook
       destination:
         server: '{{.url}}'
         #server: '{{cluster.address}}'
