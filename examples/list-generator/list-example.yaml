@@ -6,9 +6,9 @@ spec:
   generators:
   - list:
       elements:
-      - cluster: zcl-97
+      - cluster: engineering-dev
         url: https://172.16.222.97:6443
-      - cluster: zcl-98
+      - cluster: engineering-prod
         url: https://172.16.222.98:6443
   template:
     metadata:
