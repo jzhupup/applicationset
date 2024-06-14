@@ -14,7 +14,7 @@ spec:
     metadata:
       name: '{{.cluster}}-guestbook'
     spec:
-      project: default
+      project: b364f698
       source:
         repoURL: https://github.com/jzhupup/applicationset.git
         targetRevision: HEAD
