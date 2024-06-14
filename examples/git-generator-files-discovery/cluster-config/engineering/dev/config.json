@@ -1,7 +1,0 @@
-{
-  "cluster": {
-    "owner": "cluster-admin@company.com",
-    "name": "engineering-dev",
-    "address": "https://172.30.40.68:6443"
-  }
-}
