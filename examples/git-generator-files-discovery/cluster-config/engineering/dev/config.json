@@ -1,9 +1,7 @@
 {
-  "aws_account": "123456",
-  "asset_id": "11223344",
   "cluster": {
     "owner": "cluster-admin@company.com",
     "name": "engineering-dev",
-    "address": "https://kubernetes.default.svc"
+    "address": "https://172.30.40.68:6443"
   }
 }
