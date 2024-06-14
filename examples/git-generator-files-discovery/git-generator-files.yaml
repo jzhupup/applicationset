@@ -3,9 +3,15 @@ kind: ApplicationSet
 metadata:
   name: guestbook
 spec:
+  generators:
+    - git:
+        repoURL: https://github.com/jzhupup/applicationset.git
+        revision: HEAD
+        files:
+        - path: "examples/git-generator-files-discovery/cluster-config/**/config.json"
   template:
     metadata:
-      name: 'application-guestbook'
+      name: '{{cluster.name}}-guestbook'
     spec:
       project: b364f698
       source:
