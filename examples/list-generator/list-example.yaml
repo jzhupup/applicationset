@@ -12,13 +12,13 @@ spec:
         url: https://172.16.222.98:6443
   template:
     metadata:
-      name: '{{.cluster}}-guestbook'
+      name: '{{cluster}}-guestbook'
     spec:
       project: b364f698
       source:
         repoURL: https://github.com/jzhupup/applicationset.git
         targetRevision: HEAD
-        path: examples/list-generator/guestbook/{{.cluster}}
+        path: examples/list-generator/guestbook/{{cluster}}
       destination:
-        server: '{{.url}}'
+        server: '{{url}}'
         namespace: default
