@@ -7,9 +7,7 @@ spec:
   - list:
       elements:
       - cluster: engineering-dev
-        url: https://172.16.222.97:6443
-      - cluster: engineering-prod
-        url: https://172.16.222.98:6443
+        url: https://apiserver-518561409458563870.c.kubesphere.cloud:30443
   template:
     metadata:
       name: '{{cluster}}-guestbook'
